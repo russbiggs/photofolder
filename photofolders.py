@@ -10,7 +10,7 @@ def photo_func(input_folder, output_folder):
         if subdir == out_folder:
             pass
         for item in files:
-            if item.endswith(('.jpg', '.JPG')):
+            if item.endswith(('.jpg','.JPG','jpeg')):
                 base_name = os.path.splitext(item)[0]
                 out_name = out_folder + '\\' + base_name + '.jpg'
                 image = os.path.join(subdir, item)
